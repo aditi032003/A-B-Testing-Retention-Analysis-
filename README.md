@@ -8,22 +8,20 @@ The main business question was:
 
 **Should the company move the first progression gate from level 30 to level 40?**
 
-Analysed an A/B test on 90,000 users using two-proportion hypothesis testing and bootstrap resampling; quantified the retention effect with confidence intervals and delivered a ship or no-ship recommendation.
-
+![image alt](https://github.com/aditi032003/A-B-Testing-Retention-Analysis-/blob/9886910381e64b9a0dbebf1c549535c37957e476/Screenshot%202026-10-06%20205907.png)
 
 ---
 
-## 🎯 Objectives
+## 🎯 Business Questions
 
-This analysis evaluates:
+This analysis answers:
 
-- Whether the two experiment groups were reasonably balanced
-- Day-1 retention performance
-- Day-7 retention performance
-- Whether observed differences were statistically significant
-- The uncertainty around the estimated retention gap
-- The practical impact at a scale of 1 million players
-- Whether the evidence supports shipping Gate 40
+1. Were the two experiment groups reasonably balanced?
+2. Did moving the gate affect **Day-1 retention**?
+3. Did it affect **Day-7 retention**?
+4. Could the observed differences be explained by random variation?
+5. What is the practical impact at scale?
+6. Should the company ship the change?
 
 ---
 
@@ -112,6 +110,8 @@ The entire confidence interval is below zero, providing stronger evidence that t
 To understand how much the estimated retention gap could vary, I simulated **10,000 bootstrap samples** and calculated the retention gap for each simulation.
 
 The bootstrap distribution shows where the estimated retention difference tends to fall across repeated samples.
+
+![image alt](https://github.com/aditi032003/A-B-Testing-Retention-Analysis-/blob/5171d3d25ccca908f9e014ffdfe820ef4bd9f512/Screenshot%202026-10-06%20222658.png)
 
 ### Day-7 takeaway
 
